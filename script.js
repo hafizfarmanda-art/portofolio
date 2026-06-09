@@ -36,7 +36,7 @@ window.addEventListener('scroll', () => {
 
 // TYPING EFFECT
 document.addEventListener('DOMContentLoaded', function() {
-  const text = "Saya Seorang Teknik Informatika Web Developer";
+  const text = "FrontEnd Developer mahasiswa teknik informatika";
   const typingEl = document.querySelector('.home-content p');
   let i = 0;
   typingEl.textContent = '';
