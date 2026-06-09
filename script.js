@@ -35,18 +35,22 @@ window.addEventListener('scroll', () => {
 });
 
 // TYPING EFFECT
-const text = "Saya Seorang Teknik Informatika Web Developer ";
-const typingEl = document.querySelector('.home-content p');
-let i = 0;
-typingEl.textContent = '';
+document.addEventListener('DOMContentLoaded', function() {
+  const text = "Saya Seorang Teknik Informatika Web Developer";
+  const typingEl = document.querySelector('.home-content p');
+  let i = 0;
+  typingEl.textContent = '';
 
-function typing() {
-  if (i < text.length) {
-    typingEl.textContent += text.charAt(i);
-    i++;
-    setTimeout(typing, 50);
+  function typing() {
+    if (i < text.length) {
+      typingEl.textContent += text.charAt(i);
+      i++;
+      setTimeout(typing, 50);
+    }
   }
-}
+
+  typing();
+});
 
 // TYPING EFFECT ABOUT ME
 const textAbout = "Saya Hafiz, saya Seorang Teknik Informatika. Perjalanan saya di dunia digital dimulai sejak SMK jurusan TKJ. Saya tertarik di bidang Front-End Development dan suka membangun tampilan website yang menarik. Saat ini saya terus belajar dan berkembang untuk menjadi Web Developer profesional.";
